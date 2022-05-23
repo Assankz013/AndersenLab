@@ -4,17 +4,19 @@ import java.util.Scanner;
 public class Hardest {
     private static void rightShiftArray(int[] a, int n) {
         int k = n % a.length;
+        int b [] = Arrays.copyOf(a,a.length);
         for (int i = 0;i<a.length;i++){
-            if ((i+k)>(a.length-1)){
-                a[i] = a[i+k-a.length];
-            }
-            else{
-                a[i] = a[i+k];
-            }
+                a[(i+k)%a.length] = b[i];
 
         }
     }
     private static void leftShiftArray(int[] a, int n) {
+        int k = n % a.length;
+        int b [] = Arrays.copyOf(a,a.length);
+        for (int i = 0;i<a.length;i++){
+            a[(i-k)%a.length] = b[i];
+
+        }
     }
 
     public static void main(String[] args) {
@@ -33,7 +35,7 @@ public class Hardest {
             System.out.println(Arrays.toString(a));
         }
         else
-            System.out.printf("Array has no changes");
+            System.out.println("Array has no changes");
     }
 
 
