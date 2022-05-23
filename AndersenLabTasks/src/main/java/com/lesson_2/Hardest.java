@@ -4,10 +4,7 @@ import java.util.Scanner;
 public class Hardest {
     private static void rightShiftArray(int[] a, int n) {
         int k = n % a.length;
-
-
         for (int i = 0;i<a.length;i++){
-
             if ((i+k)>(a.length-1)){
                 a[i] = a[i+k-a.length];
             }
