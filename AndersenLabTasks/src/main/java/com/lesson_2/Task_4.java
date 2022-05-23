@@ -17,7 +17,6 @@ public class Task_4 {
         }
     }
     public static boolean isLeapYear(int year){
-        boolean isLeapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
-        return isLeapYear;
+        return ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
     }
 }
