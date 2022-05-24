@@ -83,11 +83,11 @@ public class Employee {
     public String toString() {
         return "Employee {" +
                 "name='" + this.getName() + '\'' +
-                ", surname='" + this.surname + '\'' +
-                ", position='" + this.position + '\'' +
+                ", surname='" + this.getSurname() + '\'' +
+                ", position='" + this.getPosition() + '\'' +
                 ", email='" + this.getEmail() + '\'' +
                 ", phoneNumber='" + this.getPhoneNumber() + '\'' +
-                ", salary=" + this.salary +
+                ", salary=" + this.getSalary() +
                 ", age=" + this.getAge() +
                 '}';
     }
