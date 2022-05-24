@@ -2,7 +2,6 @@ package com.lesson3;
 
 
 public class Employee {
-    public final static int MAX_AGE = 100;
     private String name;
     private String surname;
     private String position;
@@ -77,10 +76,7 @@ public class Employee {
     }
 
     public void setAge(int age) {
-        if((age < MAX_AGE) && (0 < age)) {
             this.age = age;
-        } else
-            System.out.println("Incorrect data");
     }
 
     @Override
