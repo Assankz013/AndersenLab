@@ -2,7 +2,7 @@ package com.lesson3;
 
 
 public class Employee {
-    public final static int MAX_AGE = 120;
+    public final static int MAX_AGE = 100;
     private String name;
     private String surname;
     private String position;
