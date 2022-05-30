@@ -15,10 +15,14 @@ public class Plate {
         this.food = food;
     }
     public void decreaseFood(int n) {
-        food -= n;
+        if ((this.food - n) > 0){
+                this.food -= n;}
+        else{
+            System.out.println("There is no food ");
+        }
     }
     public void addFood(int n){
-        food+=n;
+        this.food+=n;
     }
     public void info() {
         System.out.println("plate: " + food);

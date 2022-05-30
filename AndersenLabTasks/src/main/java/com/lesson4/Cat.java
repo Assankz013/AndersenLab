@@ -47,12 +47,17 @@ public class Cat extends Animal {
     }
 
     public void eat(Plate p) {
-        if(p.getFood()>=this.appetite)
+        if(p.getFood()>=this.appetite){
             p.decreaseFood(this.appetite);
-            this.setFull(true);
+            this.isFull = true;
+        }
+        else
+            this.isFull = false;
     }
 
-
+   public void info(){
+       System.out.println(this.getName() + " is " + this.isFull);
+   }
     @Override
     public void swim(int n) {
         System.out.println("Кот не умеет плавать");
